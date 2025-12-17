@@ -60,9 +60,7 @@ const products = [
   new Product(8, "Gurka", 12, "gront", "Svensk gurka.", "assets/gurka.webp"),
 ];
 
-// =========================================================
-// 3. VARUKORG
-// =========================================================
+
 
 let cart = [];
 
@@ -117,9 +115,6 @@ function renderCart() {
   totalPrice.innerText = sum.toFixed(2);
 }
 
-// =========================================================
-// 4. PRODUKT-MODAL
-// =========================================================
 
 let currentProduct = null;
 let modalQty = 0;
@@ -158,10 +153,6 @@ function addModalToCart() {
   }
 }
 
-// =========================================================
-// 5. RENDERING (NU 100 % SÄKER)
-// =========================================================
-
 const container = document.getElementById("product-container");
 
 function loadProducts() {
@@ -176,9 +167,6 @@ function loadProducts() {
   list.forEach(p => container.appendChild(p.createCard()));
 }
 
-// =========================================================
-// 6. NAV
-// =========================================================
 
 function toggleMenu() {
   document.getElementById("category-nav").classList.toggle("open");
